@@ -1,17 +1,14 @@
-from math import tan, pi
-n = int(input())
-a = float(input())
+[print(i * "*") for i in range(int(input()), 0, -1)]
 
-s = (n*a*a)/(4*tan(pi/n))
-
-print(s)
-
-
-
-
-
-
-
+# from math import tan, pi
+#
+# n = int(input())
+# a = float(input())
+#
+# s = (n * a * a) / (4 * tan(pi / n))
+#
+# print(s)
+#
 # import math
 #
 # print("Введите коэффициенты для уравнения")
