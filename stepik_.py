@@ -2,11 +2,14 @@
 
 n = int(input())
 
+cache = {0: 0, 1: 1}
 
-def fibonacci_of(n):
-    if n in {0, 1}:
-        return n
-    return fibonacci_of(n - 1) + fibonacci_of(n - 2)
+
+def fibonacci_of(arg):
+    if arg in cache:
+        return cache[arg]
+    cache[arg] = fibonacci_of(arg - 1) + fibonacci_of(arg - 2)
+    return cache[arg]
 
 
 print(*[fibonacci_of(n) for n in range(1, n + 1)], sep=" ")
