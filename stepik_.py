@@ -1,1 +1,1 @@
-print(5 * ((int(input()) + 5) // 10) ** 2)
+# print(__import__("numpy").prod([i for i in [int(input()) for __ in range(10)] if i]))
