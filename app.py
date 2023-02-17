@@ -1,2 +1,2 @@
-s = 'i LEARN Python LAnguaGE'
-print(s.swapcase())
+s = 'abcdababa'
+print(s.replace('ab', '123'))
