@@ -1,10 +1,7 @@
-x = 5
+def get_sum(x, y, z):
+    return x + y + z
+    print('Сумма равна', x + y + z)
 
-def add():
-    global x
-    x = 3
-    x = x + 5
-    print(x)
 
-add()
-print(x)
+if __name__ == '__main__':
+    print(get_sum(1, 2, 3))
